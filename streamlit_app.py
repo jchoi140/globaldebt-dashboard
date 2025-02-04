@@ -62,7 +62,7 @@ gdp_df = get_gdp_data()
 # -----------------------------------------------------------------------------
 # Draw the actual page
 
-# Set the title that appears at the top of the page.
+# title that appears at the top of the page: 
 '''
 # :earth_americas: GDP dashboard
 
@@ -79,7 +79,7 @@ min_value = gdp_df['Year'].min()
 max_value = gdp_df['Year'].max()
 
 from_year, to_year = st.slider(
-    'Which years are you interested in?',
+    'Select Time Range',
     min_value=min_value,
     max_value=max_value,
     value=[min_value, max_value])
